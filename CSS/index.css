@@ -43,8 +43,8 @@
       * {margin: 0; padding: 0; box-sizing: border-box; }
       body {background-color: #fff; font-family: "Apple SD Gothic Neo", "애플 SD 산돌고딕 Neo", "Roboto", "Noto Sans KR", sans-serif; box-sizing: border-box;}
       ul {list-style: none;}
-      a {text-decoration: none; color: inherit; cursor: pointer;}
-      input,button{ border:none;}
+      a {text-decoration: none; color: inherit; cursor: pointer; display: block;}
+      input, button{ border:none;}
       input:focus,input:active,button:focus,button:active {outline: none; box-shadow: none;}
       .hidden_txt{position: absolute; left: -1000px;}
       .wrap > section > h2 {font-size: 30px; border-bottom: 2px solid #000; padding-bottom: 25px;}
@@ -157,3 +157,55 @@
       .program_box li.d_flex:last-child {background: url(../img/list03.png) no-repeat right;}
       .program_box .d_flex div {color: #666; font-size: 15px; display: flex; flex-flow: column nowrap; }
       .mintit_box {height: 100%;}
+
+      /* footer */
+    footer {width: 100%; background-color: #fff; color: #444; border-top: #e2e1e7; position: relative;}
+    .top_button {width: 46px; height: 46px; background: url(../img/tworld-sprite-global.png); background-size: 249.5px 227.5px; background-position: 0px -35px; color: transparent; position: absolute; top: -47px; right: 310px;}
+    .top_button a {width: 46px; height: 46px;}
+    .footer_wrap {max-width: 1180px; margin: 0 auto; }
+    .footer_box01 {border-bottom: 1px solid #e2e1e7; font-size: 15px;}
+    .footer_box01 .d_flex {justify-content: left; padding: 45px 0 0;}
+    .footer_box01 .d_flex li:first-child a {padding-left: 0; border: none;}
+    .footer_box01 .d_flex li a {padding: 0 17px; border-left: 1px solid #e2e1e7;}
+    .footer_box01 .d_flex.Flist02 {padding: 10px 0 28px;}
+    .footer_box01 .d_flex.Flist02 button {border: 1px solid #e2e1e7; margin: -4px 8px 0 0; padding: 7px 10px;
+    align-content: center; background: #fff;}
+    .footer_box2 .d_flex {padding: 25px 0;}
+    .footer_box2 .d_flex > li {display: flex; font-size: 12px;}
+    .footer_box2 .d_flex li .icon::before {content: ""; background: url(../img/tworld-sprite-global.png);  width: 45px; height: 30px; background-size: 249.5px 227.5px; display: inline-block; margin: 5px 5px;}
+    .footer_box2 .d_flex li .icon.icon_global::before {background-position: -46.5px -83px;}
+    .footer_box2 .d_flex li .icon.icon_quality::before {background-position: -125px 0px;}
+    .footer_box2 .d_flex li .icon.icon_industry::before {background-position: -125px -32.5px;}
+    .footer_box2 .d_flex li .icon.icon_wiseuser::before {background-position: 0px 0px; width: 74px; height: 32px;}
+    .footer_box2 .d_flex li .icon.icon_science::before {background-position: -76.5px -48.5px;}
+    .footer_box2 .d_flex li .icon.icon_webawords::before {background-position: -125px -65px;}
+    .footer_box2 .d_flex li .icon.icon_growth::before {background-position: 0px -83px;}
+    .footer_box2 .column_box {font-size: 14px;}
+    .footer_box2 .column_box .customer_box {padding: 0 0 10px;}
+    .footer_box2 .column_box .customer_box > div {width: 100%; display: flex; padding-top: 5px;}
+    .footer_box2 .column_box .customer_box > div > p {padding: 0 10px; border-left: 1px solid #e2e1e7;}
+    .footer_box2 .column_box .customer_box > div > p:first-child {border: none; padding-left: 0;}
+    .footer_box2 .column_box .infor_list {display: flex; color: #808080;}
+    .footer_box2 .column_box .infor_list li {padding: 0 10px; border-left: 1px solid #e2e1e7; font-size: 14px;}
+    .footer_box2 .column_box .infor_list li a {text-decoration: underline;}
+    .footer_box2 .column_box .infor_list li:first-child {border: none; padding-left: 0;}
+    .footer_box2 .column_box > p {color: #808080; padding: 5px 0 0;}
+    .footer_box2 .column_box_right .btn {position: relative;}
+    .footer_box2 .column_box_right .btn .eng {background: #666; color: #fff; padding: 13px 25px;}
+    .footer_box2 .column_box_right .btn .eng i {display: inline-block; background: url(../img/tworld-sprite-global.png); background-size: 249.5px 227.5px; background-position: -91px -209px; width: 18px; height: 16px; vertical-align:text-bottom; margin-right: 5px;}
+    .footer_box2 .column_box_right .btn .family_site {background: #fff; padding: 13px 15px 13px 15px; border: 1px solid #666;}
+    .footer_box2 .column_box_right .btn .on {border: 1px solid #4617ce;}
+    .footer_box2 .column_box_right .btn .on i {transform:rotate(180deg);}
+    .footer_box2 .column_box_right .btn .family_site i {background: url(../img/tworld-sprite.png); background-size: 1180px 532px; background-position: -1031px -175px; width: 17px; height: 8px; display: inline-block; margin-left: 30px; }
+    .footer_box2 .column_box_right .family_list {background: #fff; border: 1px solid #e2e1e7;
+    position: absolute; left: 106px; top: -307px; z-index: 999; display: none;}
+    .footer_box2 .column_box_right .family_list li a {padding: 10px 49px 10px 20px; text-align: left; font-size: 12px;}
+    .footer_box2 .column_box_right .family_list li a:hover {background: #EFEEFF; color: #4617ce;}
+    .column_box_right .social_list {display: flex; justify-content: right;}
+    .column_box_right .social_list li a {background: url(../img/tworld-sprite-global.png); background-size: 249px 227px; width: 15px; height: 22px; margin: 15px 8px;}
+    .column_box_right .social_list li:nth-child(1) a {background-position: -234px 0px;}
+    .column_box_right .social_list li:nth-child(2) a {background-position: -234px -43px;}
+    .column_box_right .social_list li:nth-child(3) a {background-position: -137px -153px; width: 27px;}
+    .column_box_right .social_list li:nth-child(4) a {background-position: -27px -180px; width: 27px;}
+    .column_box_right .social_list li:nth-child(5) a {background-position: -209px -49px; width: 24px;}
+    .column_box_right .social_list li:nth-child(6) a {background-position: -209px -73px; width: 24px; margin-right: 0;}

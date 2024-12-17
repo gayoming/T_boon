@@ -1,4 +1,5 @@
 $(function () {
+    //메뉴 호버시 이미지 attr 변경
     $(".right li img").hover(function () {
         $(this).attr("src", $(this).attr("src").replace("_off.png", "_active.png"));
     }, function () {
@@ -6,15 +7,21 @@ $(function () {
     });
     $(".header_box .third_header ul li").hover(
         function() {
-        $(this).find("img").attr("src", "img/down_arrow_hover.png");  // 마우스를 올리면 이미지 변경
+        $(this).find("img").attr("src", "img/down_arrow_hover.png"); 
         }, 
         function() {
-        $(this).find("img").attr("src", "img/down_arrow.png");  // 마우스를 떼면 원래 이미지로 돌아옴
+        $(this).find("img").attr("src", "img/down_arrow.png");
         }
     );
     $(".third_header > ul > li").hover(
         function() {
-        $(this).find(".inner_menu").stop().slideToggle(300);  // 마우스를 올리면 이미지 변경
+        $(this).find(".inner_menu").stop().slideToggle(300);
         }
     );
+
+    //footer family 사이트
+    $(".btn .family_site").click(function () {
+        $(".column_box_right .family_list").stop().toggle();
+        $(this).toggleClass('on');
+    });
 });
